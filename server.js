@@ -43,7 +43,7 @@ app.post("/upload", upload.single("image"), async (req, res) => {
         embeds: [{
           title: "✅ ตรวจสอบสลิปผ่านแล้ว",
           color: 65280,
-          description: `พบคำหลักในสลิป: ${matched.join(", ")}`,
+          description: `ตรวจสอบสำเร็จ: ${matched.join(", ")}`,
           timestamp: new Date().toISOString()
         }]
       }));
