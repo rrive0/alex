@@ -29,7 +29,7 @@ document.getElementById("vipForm").addEventListener("submit", async function (e)
   // เตรียมส่งไปยังเซิร์ฟเวอร์
   const formData = new FormData();
   formData.append("image", imageFile);
-  formData.append("discordName", discordName); // จะใช้ฝั่งเซิร์ฟเวอร์ต่อไป (ถ้าต้องการแนบชื่อด้วย)
+  formData.append("discordName", discordName); // ส่งชื่อ Discord ไปด้วย
 
   try {
     const res = await fetch("https://alex-goe6.onrender.com/upload", {
@@ -39,15 +39,15 @@ document.getElementById("vipForm").addEventListener("submit", async function (e)
 
     const result = await res.json();
 
-    if (result.success) {
+    if (res.ok && result.success) {
       // หากสลิปได้รับการตรวจสอบสำเร็จ
       preview.innerHTML = `สลิปได้ถูกตรวจสอบแล้ว: ${result.message}`;
     } else {
       // หากสลิปผิด
       preview.innerHTML = `สลิปผิด: ${result.message || 'กรุณาใส่รูปภาพที่ถูกต้อง'}`;
     }
-  } catch (err) {
-    preview.innerHTML = `❌ เกิดข้อผิดพลาดในการเชื่อมต่อเซิร์ฟเวอร์`;
-    console.error("Error details:", err);
+  } catch (error) {
+    preview.innerHTML = "เกิดข้อผิดพลาดในการส่งข้อมูล โปรดลองใหม่อีกครั้ง";
+    console.error("Error during submission:", error);
   }
 });
