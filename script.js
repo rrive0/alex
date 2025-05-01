@@ -32,7 +32,7 @@ document.getElementById("vipForm").addEventListener("submit", async function (e)
     formData.append("discordName", discordName); // จะใช้ฝั่งเซิร์ฟเวอร์ต่อไป (ถ้าต้องการแนบชื่อด้วย)
   
     try {
-      const res = await fetch("https://alex-goe6.onrender.com", {
+      const res = await fetch("https://alex-goe6.onrender.com/upload", {
         method: "POST",
         body: formData
       });
@@ -40,9 +40,8 @@ document.getElementById("vipForm").addEventListener("submit", async function (e)
       const result = await res.json();
   
       if (result.success) {
-        preview.innerHTML = `✅ ตรวจสอบและส่งเข้า Discord สำเร็จ`;
       } else {
-        preview.innerHTML = `❌ ไม่ผ่านการตรวจสอบ: ${result.message}`;
+        preview.innerHTML = `✅ ตรวจสอบและส่งเข้า Discord สำเร็จ: ${result.message}`;
       }
     } catch (err) {
       preview.innerHTML = `❌ เกิดข้อผิดพลาดในการเชื่อมต่อเซิร์ฟเวอร์`;
