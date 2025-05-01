@@ -74,5 +74,5 @@ app.post("/upload", upload.single("image"), async (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Server started on https://alex-goe6.onrender.com:${PORT}`);
+  console.log(`Server started on http://localhost:${PORT}`);
 });
