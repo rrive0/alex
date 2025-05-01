@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Kanit', sans-serif;
+    background-color: #000; /* กำหนดพื้นหลังให้เป็นสีดำ */
+    color: #fff;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  
+  #particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8); /* กำหนดพื้นหลังของฟอร์มให้เป็นสีดำ */
+    border-radius: 15px;
+    box-shadow: 0 0 15px gold;
+    color: #fff;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: gold;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  label {
+    font-size: 1rem;
+    color: gold;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="file"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid gold;
+    background: transparent;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 8px gold;
+    transition: 0.3s;
+  }
+  
+  input[type="text"]:focus,
+  input[type="file"]:focus {
+    outline: none;
+    border-color: #ffcc00;
+    box-shadow: 0 0 10px #ffcc00;
+  }
+  
+  button {
+    background-color: gold;
+    color: black;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px gold;
+  }
+  
+  button:hover {
+    background-color: #ffcc00;
+    color: black;
+    box-shadow: 0 0 20px #ffcc00;
+  }
+  
+  #preview {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  footer {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: gold;
+    border-radius: 10px;
+    box-shadow: 0 0 15px gold;
+    text-align: center;
+  }
+  
+  footer a {
+    color: gold;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  footer a:hover {
+    color: #ffcc00;
+  }
+  
