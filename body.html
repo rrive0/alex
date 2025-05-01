@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ALEX STREAM</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background: url('your-bg-image.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      min-height: 100vh;
+      overflow-x: hidden;
+      background-color: #000;
+    }
+
+    header {
+      width: 100%;
+      padding: 20px 40px;
+      background: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(8px);
+      position: fixed;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 0 15px gold;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      color: gold;
+      text-shadow: 0 0 12px gold;
+    }
+
+    nav {
+      display: flex;
+      gap: 15px;
+    }
+
+    nav button {
+      background: transparent;
+      border: 2px solid gold;
+      color: gold;
+      padding: 10px 18px;
+      font-size: 1rem;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    nav button:hover {
+      background: gold;
+      color: black;
+      box-shadow: 0 0 15px gold;
+    }
+
+    main {
+      display: flex;
+      justify-content: space-between;
+      padding: 120px 40px 40px;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .youtube-box {
+      flex: 1;
+      min-width: 300px;
+      max-width: 480px;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 0 20px gold;
+    }
+
+    .youtube-box iframe {
+      width: 100%;
+      height: 270px;
+      border: none;
+    }
+
+    .stream-info {
+      flex: 1 1 55%;
+      min-width: 250px;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px gold;
+    }
+
+    .stream-info h2 {
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+      color: gold;
+    }
+
+    .stream-info p {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    .stream-info iframe {
+      width: 100%;
+      height: 270px;
+      border: none;
+      border-radius: 10px;
+    }
+
+    .stream-link {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: gold;
+      color: black;
+      border-radius: 10px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+
+    .stream-link:hover {
+      box-shadow: 0 0 10px gold;
+    }
+
+    .discord-btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #7289da;
+      color: white;
+      border-radius: 10px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+
+    .discord-btn:hover {
+      box-shadow: 0 0 10px #7289da;
+    }
+
+    footer {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(0, 0, 0, 0.7);
+      padding: 10px 20px;
+      font-size: 0.9rem;
+      color: gold;
+      border-radius: 10px;
+      box-shadow: 0 0 15px gold;
+    }
+
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
+    @media (max-width: 768px) {
+      main {
+        flex-direction: column;
+        padding: 120px 20px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div id="particles-js"></div>
+
+  <header>
+    <div class="logo">ALEX DEKHUDBAD</div>
+    <nav>
+      <button onclick="location.href='pay.html'">PAYMENT</button>
+      <button onclick="location.href='vip.html'">VIP TIKKOT</button>
+      <button onclick="location.href='https://www.facebook.com/lakksjslal.ksksiksks'">ติดต่อปัญหาเว็บ</button>
+    </nav>
+  </header>
+
+  <main>
+    <div class="youtube-box">
+      <iframe src="https://www.youtube.com/embed/tp6rvz9xbIs" allowfullscreen></iframe>
+    </div>
+    <div class="stream-info">
+      <h2>📢 ประกาศสตรีม</h2>
+      <p>วันนี้เราจะสตรีมเกม GTA V เวลา <strong>19:00 - 22:00</strong> ผ่านช่อง TikTok</p>
+      <p>กดลิงก์ด้านล่างเพื่อติดตามการสตรีมแบบสดได้เลย!</p>
+      <!-- TikTok Stream Embed -->
+      <a class="stream-link" href="https://www.tiktok.com/@alexdekhudbad/live?enter_from_merge=general_search&enter_method=others_photo&search_id=202505012152212F497EA40EBE2B5F5B71&search_keyword=Alex%20dekhudbad&search_result_id=7407475295786435591&search_type=general" target="_blank">🔴 ดูสตรีมสดใน TikTok</a>
+      <a class="stream-link" href="https://easydonate.app/Alexdekhudbad" target="_blank">ช่องทางสนับสนุน</a>
+      <a class="discord-btn" href="https://discord.gg/GezePGqfKE" target="_blank">เข้า Discord</a>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 | Powered by Jox
+  </footer>
+
+  <!-- Particle.js -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 80 },
+        color: { value: "#ffd700" },
+        shape: { type: "circle" },
+        opacity: { value: 0.3 },
+        size: { value: 3 },
+        line_linked: {
+          enable: true,
+          distance: 150,
+          color: "#ffd700",
+          opacity: 0.4,
+          width: 1
+        },
+        move: {
+          enable: true,
+          speed: 2
+        }
+      },
+      interactivity: {
+        events: {
+          onhover: { enable: true, mode: "repulse" }
+        }
+      },
+      retina_detect: true
+    });
+  </script>
+
+</body>
+</html>
