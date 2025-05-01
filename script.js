@@ -32,7 +32,7 @@ document.getElementById("vipForm").addEventListener("submit", async function (e)
     formData.append("discordName", discordName); // จะใช้ฝั่งเซิร์ฟเวอร์ต่อไป (ถ้าต้องการแนบชื่อด้วย)
   
     try {
-      const res = await fetch("http://localhost:5000/upload", {
+      const res = await fetch("https://alex-goe6.onrender.com", {
         method: "POST",
         body: formData
       });
