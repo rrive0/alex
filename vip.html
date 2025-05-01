@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>VIP สมัคร</title>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="particles-js"></div>
+
+  <div class="container">
+    <h1>ส่งข้อมูล VIP</h1>
+    <form id="vipForm">
+      <label for="discordName">ชื่อ Discord</label>
+      <input type="text" id="discordName" required>
+
+      <label for="image">อัปโหลดรูปสลิป (.jpg .png)</label>
+      <input type="file" id="image" accept="image/*" required>
+
+      <button type="submit">ส่งข้อมูล</button>
+    </form>
+    <div id="preview"></div>
+  </div>
+
+  <!-- scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <script src="particles-config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
