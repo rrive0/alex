@@ -37,13 +37,6 @@ document.getElementById("vipForm").addEventListener("submit", async function (e)
       body: formData
     });
 
-    // ตรวจสอบสถานะของการตอบกลับ
-    if (!res.ok) {
-      // หากไม่ได้รับการตอบกลับที่สมบูรณ์จากเซิร์ฟเวอร์ (เช่น 400, 500)
-      preview.innerHTML = `❌ เกิดข้อผิดพลาดในการเชื่อมต่อเซิร์ฟเวอร์: ${res.statusText}`;
-      return;
-    }
-
     const result = await res.json();
 
     if (result.success) {
